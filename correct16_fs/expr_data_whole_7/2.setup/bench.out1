@@ -1,0 +1,52 @@
+10.129.26.207
+start
+
+
+Fri Sep  4 06:49:10 IST 2015
+0
+3
+set $dir=/mnt
+set $nfiles=90
+set $meandirwidth=20
+set $meanfilesize=11000k
+set $nthreads=10
+set $iosize=1m
+set $meanappendsize=16k
+set $dup=90
+set $comp=10
+
+random seed: 825307441
+Filebench Version 1.4.9.1
+  456: 0.000: Allocated 178MB of shared memory
+  456: 0.001: Creating/pre-allocating files and filesets
+  456: 0.138: Fileset bigfileset: 90 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.5, 912.942MB
+  456: 0.148: Removed any existing fileset bigfileset in 1 seconds
+  456: 0.148: making tree for filset /mnt/bigfileset
+  456: 0.163: Creating fileset bigfileset...
+  456: 16.060: Preallocated 74 of 90 of fileset bigfileset in 16 seconds
+  456: 16.061: waiting for fileset pre-allocation to finish
+  460: 16.219: Starting 1 filereader instances
+random seed: 825307441
+  461: 16.319: Starting 10 filereaderthread threads
+  456: 17.356: Running...
+  456: 918.100: Run took 900 seconds...
+  456: 918.102: Per-Operation Breakdown
+statfile1            2157ops        2ops/s   0.0mb/s      0.0ms/op      111us/op-cpu [0ms - 2ms]
+deletefile1          2151ops        2ops/s   0.0mb/s      9.6ms/op     1218us/op-cpu [0ms - 787ms]
+closefile3           2157ops        2ops/s   0.0mb/s      0.0ms/op      130us/op-cpu [0ms - 8ms]
+readfile1            2157ops        2ops/s  24.4mb/s   1537.0ms/op   150315us/op-cpu [0ms - 13363ms]
+openfile2            2160ops        2ops/s   0.0mb/s      0.0ms/op      144us/op-cpu [0ms - 0ms]
+closefile2           2160ops        2ops/s   0.0mb/s      0.0ms/op      153us/op-cpu [0ms - 1ms]
+appendfilerand1      2160ops        2ops/s   0.0mb/s    241.7ms/op    18884us/op-cpu [0ms - 2786ms]
+openfile1            2160ops        2ops/s   0.0mb/s      0.1ms/op      130us/op-cpu [0ms - 159ms]
+closefile1           2160ops        2ops/s   0.0mb/s      0.0ms/op       88us/op-cpu [0ms - 27ms]
+wrtfile1             2160ops        2ops/s  26.8mb/s   2320.7ms/op   209134us/op-cpu [0ms - 7896ms]
+createfile1          2167ops        2ops/s   0.0mb/s      0.1ms/op      120us/op-cpu [0ms - 183ms]
+  456: 918.102: IO Summary: 23749 ops, 26.366 ops/s, (2/5 r/w),  51.2mb/s,  39540us cpu/op, 1369.7ms latency
+  456: 918.102: Shutting down processes
+Fri Sep  4 07:04:31 IST 2015
+
+
+ENDDELIMETER
+
+

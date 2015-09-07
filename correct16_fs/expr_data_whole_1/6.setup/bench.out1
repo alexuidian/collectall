@@ -1,0 +1,52 @@
+10.129.26.207
+start
+
+
+Fri Sep  4 01:52:52 IST 2015
+0
+3
+set $dir=/mnt
+set $nfiles=90
+set $meandirwidth=20
+set $meanfilesize=11000k
+set $nthreads=10
+set $iosize=1m
+set $meanappendsize=16k
+set $dup=0
+set $comp=0
+
+random seed: 825307441
+Filebench Version 1.4.9.1
+  468: 0.000: Allocated 178MB of shared memory
+  468: 0.001: Creating/pre-allocating files and filesets
+  468: 0.190: Fileset bigfileset: 90 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.5, 912.942MB
+  468: 0.208: Removed any existing fileset bigfileset in 1 seconds
+  468: 0.208: making tree for filset /mnt/bigfileset
+  468: 0.211: Creating fileset bigfileset...
+  468: 14.380: Preallocated 74 of 90 of fileset bigfileset in 15 seconds
+  468: 14.380: waiting for fileset pre-allocation to finish
+  472: 14.402: Starting 1 filereader instances
+random seed: 825307441
+  473: 14.813: Starting 10 filereaderthread threads
+  468: 15.930: Running...
+  468: 916.512: Run took 900 seconds...
+  468: 918.803: Per-Operation Breakdown
+statfile1            1555ops        2ops/s   0.0mb/s      0.0ms/op      148us/op-cpu [0ms - 0ms]
+deletefile1          1550ops        2ops/s   0.0mb/s     20.0ms/op     1955us/op-cpu [0ms - 1586ms]
+closefile3           1555ops        2ops/s   0.0mb/s      0.0ms/op      309us/op-cpu [0ms - 1ms]
+readfile1            1556ops        2ops/s  17.5mb/s   3785.8ms/op   218181us/op-cpu [0ms - 23455ms]
+openfile2            1564ops        2ops/s   0.0mb/s      0.0ms/op      230us/op-cpu [0ms - 3ms]
+closefile2           1564ops        2ops/s   0.0mb/s      0.0ms/op      160us/op-cpu [0ms - 0ms]
+appendfilerand1      1564ops        2ops/s   0.0mb/s    330.6ms/op    18280us/op-cpu [0ms - 2287ms]
+openfile1            1564ops        2ops/s   0.0mb/s      0.0ms/op      147us/op-cpu [0ms - 1ms]
+closefile1           1564ops        2ops/s   0.0mb/s      0.0ms/op      141us/op-cpu [0ms - 2ms]
+wrtfile1             1565ops        2ops/s  19.2mb/s   1535.3ms/op    97208us/op-cpu [0ms - 6508ms]
+createfile1          1565ops        2ops/s   0.0mb/s      0.1ms/op      217us/op-cpu [0ms - 21ms]
+  468: 918.803: IO Summary: 17166 ops, 19.015 ops/s, (2/3 r/w),  36.7mb/s,   8527us cpu/op, 1887.2ms latency
+  468: 918.803: Shutting down processes
+Fri Sep  4 02:08:13 IST 2015
+
+
+ENDDELIMETER
+
+

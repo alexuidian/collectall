@@ -1,0 +1,39 @@
+10.129.26.207
+start
+
+
+Fri Sep  4 03:06:43 IST 2015
+0
+3
+set $dir=/mnt
+set $nfiles=70
+set $meandirwidth=20
+set $meanfilesize=11000k
+set $nthreads=10
+set $iosize=1m
+set $meanappendsize=16k
+set $dup=0
+set $comp=0
+
+random seed: 825307441
+Filebench Version 1.4.9.1
+  467: 0.000: Allocated 178MB of shared memory
+  467: 0.001: Creating/pre-allocating files and filesets
+  467: 0.176: Fileset bigfileset: 70 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.4, 717.074MB
+  467: 0.180: Removed any existing fileset bigfileset in 1 seconds
+  467: 0.180: making tree for filset /mnt/bigfileset
+  467: 0.247: Creating fileset bigfileset...
+  467: 10.760: Preallocated 55 of 70 of fileset bigfileset in 11 seconds
+  467: 10.760: waiting for fileset pre-allocation to finish
+  471: 10.764: Starting 1 filereader instances
+random seed: 825307441
+  472: 10.773: Starting 10 filereaderthread threads
+  467: 11.774: Running...
+  467: 155.926: Run took 144 seconds...
+  467: 155.927: Shutting down processes
+Fri Sep  4 03:09:21 IST 2015
+
+
+ENDDELIMETER
+
+
