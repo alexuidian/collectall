@@ -1,0 +1,66 @@
+############################################################################################################
+
+current count is 0
+fcount is 0
+Benchmark started
+Thu Sep 10 20:53:35 IST 2015
+start mybench
+Thu Sep 10 20:53:35 IST 2015 Is start time
+Thu Sep 10 21:55:31 IST 2015 Is end time
+
+
+Vms are 1
+current count is 1
+Thu Sep 10 22:00:43 IST 2015
+start mybench
+Thu Sep 10 22:00:43 IST 2015 Is start time
+Thu Sep 10 23:02:41 IST 2015 Is end time
+Thu Sep 10 23:02:41 IST 2015
+Thu Sep 10 23:02:42 IST 2015
+
+current count is 2
+Thu Sep 10 23:07:51 IST 2015
+start mybench
+Thu Sep 10 23:07:51 IST 2015 Is start time
+Fri Sep 11 00:09:41 IST 2015 Is end time
+Fri Sep 11 00:09:41 IST 2015
+Fri Sep 11 00:09:42 IST 2015
+
+
+current count is 3
+fcount is 0
+start mybench
+start mybench
+Fri Sep 11 06:02:53 IST 2015 Is start time
+Fri Sep 11 07:23:36 IST 2015 Is end time
+Fri Sep 11 07:23:36 IST 2015
+Fri Sep 11 07:23:36 IST 2015
+
+
+current count is 4
+fcount is 0
+start mybench
+Fri Sep 11 07:28:44 IST 2015 Is start time
+Fri Sep 11 08:30:41 IST 2015 Is end time
+Fri Sep 11 08:30:41 IST 2015
+Fri Sep 11 08:30:41 IST 2015
+
+
+current count is 5
+fcount is 0
+id is 5
+start mybench
+Fri Sep 11 08:35:50 IST 2015 Is start time
+Fri Sep 11 09:37:46 IST 2015 Is end time
+Fri Sep 11 09:37:46 IST 2015
+Fri Sep 11 09:37:46 IST 2015
+
+
+current count is 6
+fcount is 0
+start mybench
+Fri Sep 11 09:42:50 IST 2015 Is start time
+Fri Sep 11 10:44:44 IST 2015 Is end time
+Fri Sep 11 10:44:44 IST 2015
+Fri Sep 11 10:44:45 IST 2015
+

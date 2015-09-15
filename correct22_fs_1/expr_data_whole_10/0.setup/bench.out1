@@ -1,0 +1,54 @@
+Mon Sep 14 19:24:26 IST 2015
+10.129.26.207
+start
+
+
+Mon Sep 14 19:24:26 IST 2015
+0
+3
+set $dir=/mnt
+set $nfiles=800
+set $meandirwidth=20
+set $meanfilesize=1100k
+set $nthreads=10
+set $iosize=1m
+set $meanappendsize=16k
+set $dup=15
+set $comp=45
+
+random seed: 825307441
+Filebench Version 1.4.9.1
+  454: 0.000: Allocated 178MB of shared memory
+  454: 0.001: Creating/pre-allocating files and filesets
+  454: 0.031: Fileset bigfileset: 800 files, 0 leafdirs, avg dir width = 20, avg dir depth = 2.2, 819.959MB
+  454: 0.040: Removed any existing fileset bigfileset in 1 seconds
+  454: 0.040: making tree for filset /mnt/bigfileset
+  454: 0.053: Creating fileset bigfileset...
+  454: 15.878: Preallocated 634 of 800 of fileset bigfileset in 16 seconds
+  454: 15.880: waiting for fileset pre-allocation to finish
+  458: 16.056: Starting 1 filereader instances
+random seed: 825307441
+  459: 16.192: Starting 10 filereaderthread threads
+  454: 17.265: Running...
+  454: 317.539: Run took 300 seconds...
+  454: 317.543: Per-Operation Breakdown
+statfile1            4230ops       14ops/s   0.0mb/s      0.0ms/op      177us/op-cpu [0ms - 0ms]
+deletefile1          4230ops       14ops/s   0.0mb/s     21.3ms/op     1882us/op-cpu [0ms - 1571ms]
+closefile3           4230ops       14ops/s   0.0mb/s      0.0ms/op      161us/op-cpu [0ms - 0ms]
+readfile1            4230ops       14ops/s  17.4mb/s    367.2ms/op    37265us/op-cpu [0ms - 3770ms]
+openfile2            4235ops       14ops/s   0.0mb/s      0.0ms/op      113us/op-cpu [0ms - 18ms]
+closefile2           4235ops       14ops/s   0.0mb/s      0.0ms/op      142us/op-cpu [0ms - 17ms]
+appendfilerand1      4235ops       14ops/s   0.1mb/s    194.7ms/op    18550us/op-cpu [0ms - 2345ms]
+openfile1            4236ops       14ops/s   0.0mb/s      0.1ms/op      106us/op-cpu [0ms - 542ms]
+closefile1           4236ops       14ops/s   0.0mb/s      0.0ms/op       92us/op-cpu [0ms - 16ms]
+wrtfile1             4236ops       14ops/s  17.9mb/s     47.6ms/op     7387us/op-cpu [0ms - 814ms]
+createfile1          4236ops       14ops/s   0.0mb/s     25.0ms/op     1544us/op-cpu [0ms - 1590ms]
+  454: 317.543: IO Summary: 46569 ops, 155.088 ops/s, (14/28 r/w),  35.4mb/s,   4948us cpu/op, 218.6ms latency
+  454: 317.543: Shutting down processes
+Mon Sep 14 19:29:46 IST 2015
+
+
+ENDDELIMETER
+
+
+Mon Sep 14 19:29:46 IST 2015

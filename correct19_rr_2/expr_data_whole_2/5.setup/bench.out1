@@ -1,0 +1,18 @@
+10.129.26.207
+start
+
+
+Tue Sep  8 17:21:53 IST 2015
+3
+file1600 seconds
+Read Mode 
+filesize: 515395584
+#seq_perf rand_perf #avf_perf #total_ops #cpucycles/ops #cpucycles
+28.6267 1121.54 1091.17 674308 565 381320000 492 673816 674308
+#Done
+Tue Sep  8 17:32:14 IST 2015
+
+
+ENDDELIMETER
+
+
